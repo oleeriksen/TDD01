@@ -32,8 +32,8 @@ namespace MSTests
             ICalculator c = new CalculatorImpl();
             Assert.AreEqual(0, c.Current);
             c.Add(4);
-            c.Mul(3);
-            Assert.AreEqual(12, c.Current);
+            c.Mul(4);
+            Assert.AreEqual(16, c.Current);
         }
 
         [TestMethod]
