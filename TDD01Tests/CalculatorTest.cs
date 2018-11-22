@@ -26,7 +26,16 @@ namespace TDD01Tests
 			Assert.Equal(4, c.Current);
         }
 
-		[Fact]
+        [Fact]
+        public void TestAdd2()
+        {
+            ICalculator c = new CalculatorImpl();
+            Assert.Equal(0, c.Current);
+            c.Add(-4);
+            Assert.Equal(-4, c.Current);
+        }
+
+        [Fact]
 		public void TestMul()
 		{
 			ICalculator c = new CalculatorImpl();
