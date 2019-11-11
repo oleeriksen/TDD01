@@ -4,6 +4,6 @@ dotnet: 2.2
 solution: TDD01.sln
 
 script:
-- dotnet restore
+-  dotnet restore
  - dotnet build
  - dotnet test TDD01Tests/TDD01Tests.csproj
