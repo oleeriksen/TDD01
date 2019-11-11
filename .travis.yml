@@ -7,5 +7,5 @@ script:
  - dotnet restore
  - dotnet build
  - dotnet test TDD01Tests/TDD01Tests.csproj
- - botnet test MSTest/MSTest.cproj
+ - dotnet test MSTest/MSTest.cproj
 
