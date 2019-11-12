@@ -75,7 +75,7 @@ namespace TDD01Tests
 		}
 
         [Fact]
-        public void TestDiv Exception1()
+        public void TestDivException1()
         {
             ICalculator c = new CalculatorImpl();
             Assert.Equal(0, c.Current);
