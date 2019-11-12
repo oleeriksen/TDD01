@@ -30,7 +30,7 @@ namespace TDD01Tests
         public void TestAdd2()
         {
             ICalculator c = new CalculatorImpl();
-            Assert.Equal(1, c.Current);
+            Assert.Equal(0, c.Current);
             c.Add(-4);
             Assert.Equal(-4, c.Current);
         }
