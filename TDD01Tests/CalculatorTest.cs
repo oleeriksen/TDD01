@@ -74,6 +74,15 @@ namespace TDD01Tests
             Assert.Throws<ArgumentException>(() => c.Div(0) );
 		}
 
+        [Fact]
+        public void TestDivException1()
+        {
+            ICalculator c = new CalculatorImpl();
+            Assert.Equal(0, c.Current);
+            c.Add(4);
+            Assert.Throws<ArgumentException>(() => c.Div(0));
+        }
+
         [Theory]
         [InlineData(5, 1, 6)]
         [InlineData(7, 1, 8)]
